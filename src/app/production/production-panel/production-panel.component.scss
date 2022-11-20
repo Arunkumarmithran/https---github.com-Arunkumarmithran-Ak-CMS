@@ -1,0 +1,24 @@
+.header-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 11%;
+    width: 100%;
+    background: radial-gradient(black, transparent);
+    justify-content: center;
+    align-items: center;
+}
+.btn-container{
+    color: #fff;
+    width: 170px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Josefin Sans";
+    letter-spacing: 2px;
+}
+.btn-container{
+    a:hover{
+    text-decoration-color: #D8B069;
+    text-decoration-line: underline;
+    text-underline-offset: 6px;
+}
+}
