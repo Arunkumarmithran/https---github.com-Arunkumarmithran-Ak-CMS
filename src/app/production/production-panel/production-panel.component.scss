@@ -3,22 +3,55 @@
     flex-wrap: wrap;
     height: 11%;
     width: 100%;
-    background: radial-gradient(black, transparent);
+    // background: radial-gradient(black, transparent);
     justify-content: center;
     align-items: center;
 }
 .btn-container{
-    color: #fff;
+    color: rgb(20, 4, 4);
     width: 170px;
     font-size: 12px;
     font-weight: 600;
     font-family: "Josefin Sans";
     letter-spacing: 2px;
+    z-index: 10000 !important;
+
 }
 .btn-container{
-    a:hover{
-    text-decoration-color: #D8B069;
-    text-decoration-line: underline;
-    text-underline-offset: 6px;
+a {
+    text-decoration: none;
+    position: relative;
+  }
+a::before {
+    content: "";
+    background-color: #D8B069;
+    transition: 0.4s ease-out;
+    width: 0%;
+    height: 2px;
+  
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+  }
+  
+  a:hover::before {
+    width: 100%;
+  }
+
 }
+.image-container{
+  height: 100%;
+  width: 100%;
+  text-align:center;
+  margin:0; 
+  padding:0;
+  position: absolute;
+  top:0px;
 }
+.ng-image-slider .ng-image-slider-container .main {
+  overflow: hidden !important;
+}
+.ng-image-slider .ng-image-slider-container .main .main-inner .img-div img, .ng-image-slider .ng-image-slider-container .main .main-inner .img-div video{
+  border-radius: 0 !important;
+}
+

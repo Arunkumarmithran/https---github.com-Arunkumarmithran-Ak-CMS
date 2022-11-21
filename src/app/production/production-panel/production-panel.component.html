@@ -5,3 +5,24 @@
     <div class="btn-container"><a>EVENTS</a></div>
     <div class="btn-container"><a>TEASERS & TRAILERS</a></div>
 </div>
+
+<!-- <div  *ngIf="latestMovies">
+<div>
+   <div class="mySlides slideshow-container"> 
+    <img  *ngFor="let obj of latestMovies;let i=index"
+      [src]="obj.image"  [ngClass]="{'image-active': selectedindex == i}">
+</div>
+</div>
+</div> -->
+
+<div class="image-container">
+    <ng-image-slider
+
+[images]="latestMovies"
+[infinite]="true"
+[autoSlide]="4"
+[imageSize]="{ width: '100%', height: '100%' }"
+slideImage="1"
+></ng-image-slider>
+</div>
+
