@@ -1,0 +1,127 @@
+
+.image-container{
+  height: 100%;
+  width: 100%;
+ 
+}
+.ng-image-slider .ng-image-slider-container .main {
+  overflow: hidden !important;
+}
+.ng-image-slider .ng-image-slider-container .main .main-inner .img-div img, .ng-image-slider .ng-image-slider-container .main .main-inner .img-div video{
+  border-radius: 0 !important;
+}
+::ng-deep.ng-image-slider .ng-image-slider-container .main .main-inner .img-div.image-popup{
+  pointer-events: none !important;
+  cursor:none !important;
+ user-select: none !important;
+}
+.teaser-heading{
+    color: #ffffff;
+    text-align: center;
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+.teaser-heading-layout h2{
+    color: #D8B069;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    
+}
+.teaser-container{
+    height: 68vh;
+    width: 100%;
+    background-color: #333333;
+    justify-content: space-around;
+    display: flex;
+}
+.teaser-heading-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    width: 100%;
+    background-color: #333333;
+  
+}
+.teaser-container-layout{
+    height:46vh ;
+    width: 23%;
+    // -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+.teaser-container-layout:hover {
+    height:47vh;
+    width: 23%;
+      cursor: pointer;
+  }
+.teaser-container-layout img{
+    height: 60vh;
+    width: 24vw;
+}
+.movies-heading-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    width: 100%;
+    background-color: #191919;
+}
+.movies-container{
+    height: 90vh;
+    width: 100%;
+    background-color: #191919;
+    justify-content: space-around;
+    // position: absolute;
+    display: flex;
+}
+.movies-container-layout{
+    height:46vh ;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+        width: 23%;
+
+}
+.movies-container-layout:hover {
+    -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+    cursor: pointer;
+  }
+.movies-container-layout img{
+    height: 60vh;
+    width: 23vw;
+}
+.movies-content{
+    height: 25vh;
+    width: 22vw;
+    margin-left: 9px;
+}
+.year{
+    color: #ffffff;
+    text-align: center;
+    font-family: "Josefin Sans";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+.name{
+    color: #ffffff;
+    text-align: center;
+    font-family: "Josefin Sans";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+
+}
+ .movies-content div{
+    font-size: 16px;
+    color: #ababab;
+    line-height: 2;
+    text-align: center;
+    font-family: "Josefin Sans";
+    font-weight: 700;
+    font-style: normal;
+}

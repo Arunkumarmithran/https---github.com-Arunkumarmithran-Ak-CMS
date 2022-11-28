@@ -6,18 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./production-panel.component.scss']
 })
 export class ProductionPanelComponent  {
-  latestMovies = [] as any
+  onChanges='home';
+  // about!:string;
+  // movies!:string;
+  // events!:string;
+  // teaser!:string;
+  // onChanges!:string
 
-  img = 'https://www.dwp.in/file/wp-content/plugins/revslider/public/assets/assets/loader.gif'
+
   constructor() {
-    this.latestMovies = [
-      { thumbImage: 'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/5.jpg', title: 'Hummingbirds are amazing creatures' },
-      { thumbImage: 'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/9.jpg' , title: 'Hummingbirds are amazing creatures'},
-      { thumbImage: 'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/7.jpg', title: 'Hummingbirds are amazing creatures' },
-      { thumbImage: 'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/1.jpg', title: 'Hummingbirds are amazing creatures' }
-    ]
+  
   }
   ngOnInit(): void{
+    }
+    componentAction(data:string){
+      this.onChanges=data
+console.log(data,'Arunkm')
     }
  
 }

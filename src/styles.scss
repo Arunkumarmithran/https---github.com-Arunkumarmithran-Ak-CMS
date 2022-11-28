@@ -3,4 +3,19 @@ body {
     width: 100%;
    margin: 0;
    padding: 0;
+//    background-color: #333333;
+
+  }
+  body::-webkit-scrollbar {
+    width: 4px;
+  }
+  body::-webkit-scrollbar-track {
+    box-shadow: none;
+    background: transparent;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: white;
+    border: 1px solid aliceblue;
+    margin-right: 2px;
+    border-radius: 2px;
   }

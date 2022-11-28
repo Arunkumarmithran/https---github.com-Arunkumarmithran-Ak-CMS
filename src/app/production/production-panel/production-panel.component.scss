@@ -6,10 +6,14 @@
     // background: radial-gradient(black, transparent);
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to right,rgba(0,0,0,.1),rgba(0,0,0,.25),rgba(0,0,0,.5),rgba(0,0,0,.25),rgba(0,0,0,.1));    position: fixed;
+    z-index: 2;
+    transition: top 0.3s;
+
 }
 .btn-container{
-    color: rgb(20, 4, 4);
-    width: 170px;
+  color: #fff;
+  width: 170px;
     font-size: 12px;
     font-weight: 600;
     font-family: "Josefin Sans";
@@ -42,16 +46,16 @@ a::before {
 .image-container{
   height: 100%;
   width: 100%;
+  height: 100%;
+  width: 100%;
   text-align:center;
   margin:0; 
   padding:0;
   position: absolute;
   top:0px;
+  left: -4px;
+
+ 
 }
-.ng-image-slider .ng-image-slider-container .main {
-  overflow: hidden !important;
-}
-.ng-image-slider .ng-image-slider-container .main .main-inner .img-div img, .ng-image-slider .ng-image-slider-container .main .main-inner .img-div video{
-  border-radius: 0 !important;
-}
+
 
