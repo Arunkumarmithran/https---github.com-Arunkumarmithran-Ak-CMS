@@ -14,19 +14,11 @@
     </div>
     <div class="teaser-container">
         <div *ngFor="let item of latestMovies; let i=index">
-        <div class="teaser-container-layout" *ngIf="i<4">
-            <img *ngIf="i<4" src="{{item.thumbImage}}">
+            <div class="teaser-container-layout" *ngIf="i<4">
+                <img *ngIf="i<4" class="teaser-container-layout-image" src="{{item.thumbImage}}">
+            </div>
         </div>
-    </div>
-        <!-- <div class="teaser-container-layout">
-            <img src="{{latestMovies[3].thumbImage}}">
-        </div>
-        <div class="teaser-container-layout">
-            <img src="{{latestMovies[2].thumbImage}}">
-        </div>
-        <div class="teaser-container-layout">
-            <img src="{{latestMovies[0].thumbImage}}">
-        </div> -->
+
 
     </div>
 
@@ -42,32 +34,128 @@
     </div>
     <div class="movies-container">
         <div *ngFor="let item of latestMovies; let i=index">
-        <div class="movies-container-layout" *ngIf="i<4" >
-            <img *ngIf="i<4" src="{{item.thumbImage}}">
-            <div *ngIf="i<4" class="movies-content">
-                <h2 class="year">2022</h2>
-                <h2 class="name">Vattam</h2>
-                <div>Cast : Sibi Sathyaraj, Andrea Jeremiah, Athulya Ravi</div>
-                <div>Director : Kamalakannan
+            <div class="movies-container-layout" *ngIf="i<4">
+                <img *ngIf="i<4" class="movies-container-layout-image" src="{{item.thumbImage}}">
+                <div *ngIf="i<4" class="movies-content">
+                    <h2 class="year">2022</h2>
+                    <h2 class="name">Vattam</h2>
+                    <div>Cast : Sibi Sathyaraj, Andrea Jeremiah, Athulya Ravi</div>
+                    <div>Director : Kamalakannan
+                    </div>
+                    <div>Music: Nivas K. Prasanna
+                    </div>
+                    <div>Editor: Ruben
+                    </div>
+
                 </div>
-                <div>Music: Nivas K. Prasanna
+            </div>
+        </div>
+
+    </div>
+
+    <div class="about-container">
+        <div class="about-text">ABOUT</div>
+        <div class="Warrior-text">Dream Warrior Pictures</div>
+        <div class="parragraph">It is a long established fact that a reader will be distracted by the readable content
+            of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content here', making it look like readable
+            English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model
+            text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions
+            have evolved over the years, sometimes by accident, sometimes on purpose</div>
+        <div class="btn-container"><button>Know More</button></div>
+        <div class="picture-container">
+            <ng-image-slider #nav [images]="eventImage" [infinite]="true" [autoSlide]="4"
+                [imageSize]="{width: '19.5%', height: 184}" slideImage="1" [ariaReadOnly]="false">
+            </ng-image-slider>
+        </div>
+    </div>
+    <div class="director-container">
+        <div class="director-container-image">
+            <div class="director-flex-container">
+                <div class="first-image"><img
+                        src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+                        style="position: relative;       height: 52vh;
+                        top: 205px;
+                        width: 72%;">
                 </div>
-                <div>Editor: Ruben
+                <div class="second-image"><img
+                        src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+                        style="position: relative;       height: 52vh;
+                        top: 205px;
+                        width: 72%;">
+                </div>
+                <div class="about-text">DREAM</div>
+                <div class="Warrior-text">Warriors</div>
+                <div class="parragraph-sc">The Brothers Duo, S.R. Prakash Babu & S.R. Prabhu are the dream warriors
+                    chasing their dream for
+                    sensible & quality movies that would reach the audience successfully. Their intrinsic mastery over
+                    the art of movie making, choice of scripts and the empathetic audience understanding is what makes
+                    every movie a success. Their proficiency in omni channel movie marketing & distribution is another
+                    cornerstone to their success.</div>
+                <div class="name-layout">
+                    <div class="name">Prakash Babu /<span>
+                            Partner</span></div>
+                    <div class="name">
+                        SR Prabhu / <span>Partner</span></div>
+                    <div class="Know-them">Know them</div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="about-container-ak">
+        <div class="about-text">NEWS & EVENTS</div>
+        <div class="Warrior-text">Know the Latest</div>
+        <div class="parragraph-ak">Raatchasi Movie - Malaysian Education Minister Dr Maszlee Malik appreciating
+            Raatchasi Team.</div>
+
+        <div class="about-picture-container">
+            <div *ngFor="let item of latestMovies; let i=index" class="about-container-inside">
+                <div *ngIf="i<5">
+                    <img *ngIf="i<5" class="about-container-layout-image" src="{{item.thumbImage}}">
+                </div>
+            </div>
+        </div>
+        <div class="btn-container"><button>Know More</button></div>
+    </div>
+    <div class="detail-section">
+        <div class="detail-section-container">
+            <div class="detail-section-layout">
+                <div class="logo-container">Dream Warrior Pictures</div>
+                <div class="detail-text">The images used in this website may be used for identification/illustration
+                    purposes in the context of critical commentary of the Film/Article through Wikipedia or Wikimedia or
+                    related sites.</div>
+
+            </div>
+            <div class="detail-section-layout">
+                <div class="small-heading">QUICK LINKS</div>
+                <div class="small-heading-sc">Terms and Conditions for Submission</div>
+                <div class="small-heading-sc">Events</div>
+                <div class="small-heading-sc">Legal</div>
+                <div class="small-heading-sc">Terms of use</div>
+                <div class="small-heading-sc">Privacy Policy</div>
+            </div>
+
+            <div class="detail-section-layout">
+                <div class="small-heading">CONTACT</div>
+                <div class="small-heading-sc1"> mail@production.in</div>
+                <div class="small-heading">CONNECT</div>
+
+                <div class="media-link">
+                    <a class="linkedin" href="www.twitter.com"></a>
+                    <a class="fb" href="www.facebook.com"></a>
+                    <a class="twitter" href="www.twitter.com"></a>
+                    <a class="youtupe" href="www.youtupe.com"></a>
+                    <a class="insta" href="www.instagram.com"></a>
                 </div>
 
             </div>
-        </div>
-    </div>
-        <!-- <div class="movies-container-layout">
-            <img src="{{latestMovies[3].thumbImage}}">
-        </div>
-        <div class="movies-container-layout">
-            <img src="{{latestMovies[2].thumbImage}}">
-        </div>
-        <div class="movies-container-layout">
-            <img src="{{latestMovies[0].thumbImage}}">
-        </div> -->
 
+        </div>
+        <footer>Copyright © 2022, Dream Warrior Pictures . All Rights Reserved. Concept by repute</footer>
     </div>
 
 </div>

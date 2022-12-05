@@ -8,11 +8,12 @@ import { ProductionPanelComponent } from './production/production-panel/producti
 import { LoginComponent } from './admin/login/login.component';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { HomeComponent } from './production/home/home.component';
-import { AboutComponent } from './production/about/about.component';
 import { MoviesComponent } from './production/movies/movies.component';
 import { EventsComponent } from './production/events/events.component';
 import { TeaserTrailerComponent } from './production/teaser-trailer/teaser-trailer.component';
 import { FormsModule } from '@angular/forms';
+import { AboutComponent } from './production/about/about.component';
+import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
 
 @NgModule({
   declarations: [
@@ -21,10 +22,11 @@ import { FormsModule } from '@angular/forms';
     ProductionPanelComponent,
     LoginComponent,
     HomeComponent,
-    AboutComponent,
     MoviesComponent,
     EventsComponent,
     TeaserTrailerComponent,
+    AboutComponent,
+    
     
     
   ],
@@ -32,7 +34,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     NgImageSliderModule,
-    FormsModule
+    FormsModule,
+    NgxHideOnScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]
