@@ -25,7 +25,7 @@ a {
     text-decoration: none;
     position: relative;
   }
-a::before {
+a::before{
     content: "";
     background-color: #D8B069;
     transition: 0.4s ease-out;

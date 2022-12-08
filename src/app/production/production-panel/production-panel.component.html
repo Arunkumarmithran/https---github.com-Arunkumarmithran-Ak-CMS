@@ -1,25 +1,19 @@
-<div class="header-container" ngxHideOnScroll>
-    <div class="btn-container"(click)="componentAction('home')"><a>HOME</a></div>
-    <div class="btn-container" (click)="componentAction('about')"><a>ABOUT US</a></div>
-    <div class="btn-container" (click)="componentAction('movies')"><a>MOVIES</a></div>
-    <div class="btn-container" (click)="componentAction('events')"><a>EVENTS</a></div>
-    <div class="btn-container" (click)="componentAction('teaser')"><a>TEASERS & TRAILERS</a></div>
-</div>
 
-<!-- <div  *ngIf="latestMovies">
-<div>
-   <div class="mySlides slideshow-container"> 
-    <img  *ngFor="let obj of latestMovies;let i=index"
-      [src]="obj.image"  [ngClass]="{'image-active': selectedindex == i}">
+<div class="header-container" ngxHideOnScroll>
+    <div class="btn-container" routerLink="home" (click)="componentAction('home')"><a>HOME</a></div>
+    <div class="btn-container" routerLink="about" (click)="componentAction('about')"><a>ABOUT US</a></div>
+    <div class="btn-container" routerLink="movies" (click)="componentAction('movies')"><a>MOVIES</a></div>
+    <div class="btn-container" routerLink="events" (click)="componentAction('events')"><a>EVENTS</a></div>
+    <div class="btn-container" routerLink="teaser/trailer" (click)="componentAction('teaser')"><a>TEASERS & TRAILERS</a></div>
 </div>
-</div>
-</div> -->
 
 <div class="image-container">
- <app-home *ngIf="onChanges==='home'" ></app-home>
- <app-about *ngIf="onChanges==='about'" ></app-about>
- <app-movies *ngIf="onChanges==='movies'" ></app-movies>
- <app-events *ngIf="onChanges==='events'" ></app-events>
- <app-teaser-trailer *ngIf="onChanges==='teaser'" ></app-teaser-trailer>
+<router-outlet></router-outlet>
+  <!-- <app-home *ngIf="onChanges=='home' " ></app-home>
+ <app-about *ngIf="onChanges=='about'" ></app-about>
+ <app-movies *ngIf="onChanges=='movies'" ></app-movies>
+ <app-events *ngIf="onChanges=='events'" ></app-events>
+ <app-teaser-trailer *ngIf="onChanges=='teaser'" ></app-teaser-trailer> -->
+  
 </div>
 

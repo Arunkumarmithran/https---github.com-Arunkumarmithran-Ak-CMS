@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./movies.component.scss']
 })
 export class MoviesComponent {
+  card=false;
 constructor(){
   console.log('movies')
 

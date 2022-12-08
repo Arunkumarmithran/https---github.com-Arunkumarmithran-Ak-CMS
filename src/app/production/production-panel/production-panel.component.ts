@@ -6,18 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./production-panel.component.scss']
 })
 export class ProductionPanelComponent  {
-  onChanges='home';
-  // about!:string;
-  // movies!:string;
-  // events!:string;
-  // teaser!:string;
-  // onChanges!:string
-
-
-  constructor() {
+  onChanges:string=' ';
+  // onChanges='home'
+ 
+  constructor() { }
+   ngOnInit():void{
   
-  }
-  ngOnInit(): void{
+   
+
     }
     componentAction(data:string){
       this.onChanges=data

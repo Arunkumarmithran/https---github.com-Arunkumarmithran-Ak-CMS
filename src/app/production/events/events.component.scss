@@ -1,6 +1,10 @@
 .image-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 50vh;
   width: 100%;
   background: round;
+  text-align: center;
   background-image: url(https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/5.jpg);
 }
