@@ -10,14 +10,6 @@ export class ProductionPanelComponent  {
   // onChanges='home'
  
   constructor() { }
-   ngOnInit():void{
-  
-   
-
-    }
-    componentAction(data:string){
-      this.onChanges=data
-console.log(data,'Arunkm')
-    }
+ 
  
 }

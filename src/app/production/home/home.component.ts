@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { DialogService } from 'src/app/service/dialog.service';
+import { YoutubeDialogComponent } from '../youtube-dialog/youtube-dialog.component';
 
 @Component({
   selector: 'app-home',
@@ -8,9 +10,10 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   latestMovies = [] as any
   eventImage = [] as any
+  displayDialog=false;
 
   img = 'https://www.dwp.in/file/wp-content/plugins/revslider/public/assets/assets/loader.gif'
-  constructor() {
+  constructor( private dialogService:DialogService) {
     this.latestMovies = [
       { thumbImage: 'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/5.jpg', title: 'Hummingbirds are amazing creatures' },
       { thumbImage: 'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/9.jpg' , title: 'Hummingbirds are amazing creatures'},
@@ -29,8 +32,12 @@ export class HomeComponent {
     ]
   }
   ngOnInit(): void{
-      console.log('home')
     
-    
+    }
+    dialogOpen() {
+      console.log('home-triggerd')
+
+      this.displayDialog = true;
+      this.dialogService.setMessage((this.displayDialog = true));
     }
 }

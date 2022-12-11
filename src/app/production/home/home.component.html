@@ -12,10 +12,11 @@
             <div class="teaser-heading">Teasers & Trailers</div>
         </div>
     </div>
+
     <div class="teaser-container">
         <div *ngFor="let item of latestMovies; let i=index">
-            <div class="teaser-container-layout" *ngIf="i<4">
-                <img *ngIf="i<4" class="teaser-container-layout-image" src="{{item.thumbImage}}">
+            <div class="teaser-container-layout" *ngIf="i<4" (click)="dialogOpen()">
+                <img *ngIf="i<4" class="teaser-container-layout-image" src="{{item.thumbImage}}" alt="Ak">
             </div>
         </div>
 
@@ -35,7 +36,7 @@
     <div class="movies-container">
         <div *ngFor="let item of latestMovies; let i=index">
             <div class="movies-container-layout" *ngIf="i<4">
-                <img *ngIf="i<4" class="movies-container-layout-image" src="{{item.thumbImage}}">
+                <img *ngIf="i<4" class="movies-container-layout-image" src="{{item.thumbImage}}" alt="Ak">
                 <div *ngIf="i<4" class="movies-content">
                     <h2 class="year">2022</h2>
                     <h2 class="name">Vattam</h2>
@@ -62,7 +63,7 @@
             English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model
             text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions
             have evolved over the years, sometimes by accident, sometimes on purpose</div>
-        <div class="btn-container"><button>Know More</button></div>
+        <div class="btn-container-sc"><button>Know More</button></div>
         <div class="picture-container">
             <ng-image-slider #nav [images]="eventImage" [infinite]="true" [autoSlide]="4"
                 [imageSize]="{width: '19.5%', height: 184}" slideImage="1" [ariaReadOnly]="false">
@@ -119,8 +120,9 @@
                 </div>
             </div>
         </div>
-        <div class="btn-container"><button>Know More</button></div>
+        <div class="btn-container-sc"><button>Know More</button></div>
     </div>
+  
     <div class="detail-section">
         <div class="detail-section-container">
             <div class="detail-section-layout">
@@ -159,3 +161,4 @@
     </div>
 
 </div>
+<app-youtube-dialog></app-youtube-dialog>

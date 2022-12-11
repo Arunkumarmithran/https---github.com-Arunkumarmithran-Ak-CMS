@@ -14,6 +14,10 @@ import { TeaserTrailerComponent } from './production/teaser-trailer/teaser-trail
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './production/about/about.component';
 import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
+import { YoutubeDialogComponent } from './production/youtube-dialog/youtube-dialog.component';
+import { DialogModule } from 'primeng/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -26,6 +30,7 @@ import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
     EventsComponent,
     TeaserTrailerComponent,
     AboutComponent,
+    YoutubeDialogComponent,
     
     
     
@@ -35,7 +40,8 @@ import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
     AppRoutingModule,
     NgImageSliderModule,
     FormsModule,
-    NgxHideOnScrollModule
+    NgxHideOnScrollModule,
+    DialogModule,BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
