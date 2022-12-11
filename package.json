@@ -11,7 +11,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^15.0.0",
-    "@angular/common": "^15.0.0",
+    "@angular/common": "^15.0.3",
     "@angular/compiler": "^15.0.0",
     "@angular/core": "^15.0.0",
     "@angular/forms": "^15.0.0",
@@ -24,6 +24,7 @@
     "primeng": "^15.0.0-rc.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
+    "vercel": "^19.1.2",
     "zone.js": "~0.12.0"
   },
   "devDependencies": {
